@@ -3,7 +3,7 @@
 @section('content')
     <style>
         .mybg {
-            background-image: linear-gradient(#1975d1, #1975d1);
+            background-image: linear-gradient(#30b3a8, #30b3a8);
         }
 
         .numbering {
@@ -20,7 +20,7 @@
         .icon {
             font-size: 1.5rem;
             margin-right: -10px;
-            color: #212529
+            color: #30b3a8
         }
 
     </style>

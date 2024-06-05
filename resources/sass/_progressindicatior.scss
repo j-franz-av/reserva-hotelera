@@ -47,12 +47,12 @@
 }
 
 .progress-indicator > li:hover {
-    color: #6f6f6f;
+    color: #30b3a8;
 }
 
 .progress-indicator > li.completed,
 .progress-indicator > li.completed .bubble {
-    color: #65d074;
+    color: #30b3a8;
 }
 
 .progress-indicator > li .bubble {
@@ -79,8 +79,8 @@
 .progress-indicator > li.completed .bubble,
 .progress-indicator > li.completed .bubble:after,
 .progress-indicator > li.completed .bubble:before {
-    background-color: #65d074;
-    border-color: #247830;
+    background-color: #30b3a8;
+    border-color: #30b3a8;
 }
 
 .progress-indicator > li .bubble:before {
@@ -111,52 +111,52 @@
 .progress-indicator > li.active .bubble,
 .progress-indicator > li.active .bubble:after,
 .progress-indicator > li.active .bubble:before {
-    background-color: #337ab7;
+    background-color: #30b3a8;
     border-color: #122a3f;
 }
 
 .progress-indicator > li a:hover .bubble,
 .progress-indicator > li a:hover .bubble:after,
 .progress-indicator > li a:hover .bubble:before {
-    background-color: #5671d0;
-    border-color: #1f306e;
+    background-color: #30b3a8;
+    border-color: #30b3a8;
 }
 
 .progress-indicator > li a:hover .bubble {
-    color: #5671d0;
+    color: #30b3a8;
 }
 
 .progress-indicator > li.danger .bubble,
 .progress-indicator > li.danger .bubble:after,
 .progress-indicator > li.danger .bubble:before {
-    background-color: #d3140f;
-    border-color: #440605;
+    background-color: #30b3a8;
+    border-color: #30b3a8;
 }
 
 .progress-indicator > li.danger .bubble {
-    color: #d3140f;
+    color: #30b3a8;
 }
 
 .progress-indicator > li.warning .bubble,
 .progress-indicator > li.warning .bubble:after,
 .progress-indicator > li.warning .bubble:before {
-    background-color: #edb10a;
-    border-color: #5a4304;
+    background-color: #30b3a8;
+    border-color: #30b3a8;
 }
 
 .progress-indicator > li.warning .bubble {
-    color: #edb10a;
+    color: #30b3a8;
 }
 
 .progress-indicator > li.info .bubble,
 .progress-indicator > li.info .bubble:after,
 .progress-indicator > li.info .bubble:before {
-    background-color: #5b32d6;
-    border-color: #25135d;
+    background-color: #30b3a8;
+    border-color: #30b3a8;
 }
 
 .progress-indicator > li.info .bubble {
-    color: #5b32d6;
+    color: #30b3a8;
 }
 
 .progress-indicator.stacked > li {
