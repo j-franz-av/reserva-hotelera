@@ -107,14 +107,14 @@ body {
 /* Track */
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px #30b3a8;
     border-radius: 10px;
 }
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #909090;
+    background: #30b3a8;
     border-radius: 10px;
 }
 
@@ -128,7 +128,7 @@ body {
 
 a,
 a:active {
-    color: #65676b;
+    color: #30b3a8;
 }
 
 .select2-container .select2-selection--single {

@@ -5,11 +5,11 @@
 
 body {
     /* background: #0099ff; */
-    background: linear-gradient(to right, rgba(80, 0, 202, 1), rgba(80, 0, 202, 1));
+    background: linear-gradient(to right, #30b3a8, #30b3a8);
 }
 
 .bgblue {
-    background: linear-gradient(to right, #0099ff, #0099ff);
+    background: linear-gradient(to right, #30b3a8    , #30b3a8);
 }
 
 .vertical-center {
@@ -24,17 +24,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0099ff;
+    background: #30b3a8;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(80, 0, 202, 1);
+    background: #30b3a8;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #30b3a8;
 }
 
 .wavestop {
@@ -90,7 +90,7 @@ body {
     margin-bottom: 0;
     /* Override default `<label>` margin */
     line-height: 1.5;
-    color: #495057;
+    color: #30b3a8;
     border: 1px solid transparent;
     border-radius: .25rem;
     transition: all .1s ease-in-out;
@@ -125,16 +125,16 @@ body {
     padding-top: calc(var(--input-padding-y) / 3);
     padding-bottom: calc(var(--input-padding-y) / 3);
     font-size: 12px;
-    color: #777;
+    color: #30b3a8;
 }
 
 .glassmorphism {
     background: rgba(255, 255, 255, 0.80);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 #30b3a8;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #30b3a8;
 }
 
 
@@ -146,7 +146,7 @@ body {
         display: none;
     }
     .form-label-group input::-ms-input-placeholder {
-        color: #777;
+        color: #30b3a8;
     }
 }
 
@@ -160,6 +160,6 @@ body {
         display: none;
     }
     .form-label-group input:-ms-input-placeholder {
-        color: #777;
+        color:#30b3a8;
     }
 }

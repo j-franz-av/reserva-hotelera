@@ -9,13 +9,13 @@
         }
 
         hr {
-            color: #0000004f;
+            color: #30b3a8;
             margin-top: 5px;
             margin-bottom: 5px
         }
 
         .add td {
-            color: #c5c4c4;
+            color: #30b3a8;
             text-transform: uppercase;
             font-size: 12px
         }
