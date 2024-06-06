@@ -1,5 +1,5 @@
 @extends('template.auth')
-@section('title', 'Dashboard')
+@section('title', 'Panel')
 @section('content')
     <link href="{{ asset('style/css/stylelogin.css') }}" rel="stylesheet">
     <div class="wavestop">
@@ -24,7 +24,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h5 class="card-title text-center">Sistem Informasi Perusahaan</h5>
+                                <h5 class="card-title text-center">Sistema de información </h5>
                             </div>
                         </div>
                         <form class="form-signin" action="http://localhost:81/sip/pelamar/fungsi_daftar" method="post">
@@ -33,17 +33,17 @@
                                     <div class="form-label-group">
                                         <input type="email" id="email" name="email" class="form-control" placeholder="Email"
                                             value="" required autofocus>
-                                        <label for="email">Email</label>
+                                        <label for="email">Correo electronico</label>
                                     </div>
                                     <div class="form-label-group">
                                         <input type="password" id="password" name="password" autocomplete="new-password"
                                             class="form-control" placeholder="Password" value="" required>
-                                        <label for="password">Password</label>
+                                        <label for="password">Contraseña</label>
                                     </div>
                                     <div class="form-label-group">
                                         <input type="password" id="password_konfirmasi" name="password_konfirmasi"
                                             class="form-control" placeholder="Repead Password" value="" required>
-                                        <label for="password_konfirmasi">Konfirmasi password</label>
+                                        <label for="password_konfirmasi">Confirmar contraseña</label>
                                     </div>
                                 </div>
                             </div>

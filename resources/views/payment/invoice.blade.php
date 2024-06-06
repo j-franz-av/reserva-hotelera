@@ -1,5 +1,5 @@
 @extends('template.invoicemaster')
-@section('title', 'Payment')
+@section('title', 'Pago')
 @section('head')
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
@@ -33,7 +33,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="d-flex flex-row p-2"> <img src="{{ asset('img/logo/sip.png') }}" width="48">
-                        <div class="d-flex flex-column"> <span class="font-weight-bold">Invoice</span>
+                        <div class="d-flex flex-column"> <span class="font-weight-bold">Factura</span>
                             <small>INV-{{ $payment->id }}</small>
                         </div>
                     </div>
@@ -57,10 +57,10 @@
                         <table class="table table-borderless">
                             <tbody>
                                 <tr class="add">
-                                    <td>Description</td>
-                                    <td class="text-center">Days</td>
-                                    <td class="text-center">Room Price / Day</td>
-                                    <td class="text-center">Total Price</td>
+                                    <td>Descripción</td>
+                                    <td class="text-center">Días</td>
+                                    <td class="text-center">Precio de la habitación / Día</td>
+                                    <td class="text-center">Precio total</td>
                                 </tr>
                                 <tr class="content">
                                     <td>{{ $payment->transaction->room->type->name }} -
@@ -81,10 +81,9 @@
                             <tbody>
                                 <tr class="add">
                                     <td></td>
-                                    <td class="text-center">Minimum DownPayment</td>
-                                    <td class="text-center">Paid Off</td>
-                                    <td class="text-center">
-                                        insufficient payment</td>
+                                    <td class="text-center">Pago inicial mínimo</td>
+                                    <td class="text-center">Pagado</td>
+                                    <td class="text-center">Pago insuficiente</td>
                                 </tr>
                                 <tr class="content">
                                     <td></td>
@@ -103,14 +102,14 @@
                         <table class="table table-borderless">
                             <tbody>
                                 <tr class="add">
-                                    <td>Customer Details</td>
+                                    <td>Detalles del cliente</td>
                                 </tr>
                                 <tr class="content">
                                     <td>
-                                        Customer ID : {{ $payment->transaction->customer->id }}
-                                        <br>Customer Name : {{ $payment->transaction->customer->name }}
-                                        <br> Customer Job : {{ $payment->transaction->customer->job }}
-                                        <br> Customer Address : {{ $payment->transaction->customer->address }}
+                                        Identificación del cliente: {{ $payment->transaction->customer->id }}
+                                        <br>Nombre del cliente : {{ $payment->transaction->customer->name }}
+                                        <br> Trabajo del cliente : {{ $payment->transaction->customer->job }}
+                                        <br> Dirección del cliente : {{ $payment->transaction->customer->address }}
                                         <br>
                                     </td>
                                 </tr>

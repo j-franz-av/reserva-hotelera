@@ -1,5 +1,5 @@
 @extends('template.master')
-@section('title', 'Room')
+@section('title', 'Habitación')
 @section('head')
     <style>
         .text {
@@ -34,26 +34,26 @@
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="mb-3">
-                                        <label for="status" class="form-label">Status</label>
+                                        <label for="status" class="form-label">Estado</label>
                                         <select id="status" class="form-select" aria-label="Choose status">
-                                            <option selected>All</option>
+                                            <option selected>Todos</option>
                                             @forelse ($roomStatuses as $roomStatus)
                                                 <option value="{{ $roomStatus->id }}">{{ $roomStatus->name }}</option>
                                             @empty
-                                                <option value="">No room status</option>
+                                                <option value="">Sin estado de habitación</option>
                                             @endforelse
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="mb-3">
-                                        <label for="type" class="form-label">Type</label>
+                                        <label for="type" class="form-label">Tipo</label>
                                         <select id="type" class="form-select" aria-label="Choose type">
-                                            <option selected>All</option>
+                                            <option selected>Todos</option>
                                             @forelse ($types as $type)
                                                 <option value="{{ $type->id }}">{{ $type->name }}</option>
                                             @empty
-                                                <option value="">No type</option>
+                                                <option value="">Sin tipo</option>
                                             @endforelse
                                         </select>
                                     </div>
@@ -68,12 +68,12 @@
                                 <table id="room-table" class="table table-sm table-hover" style="width: 100%;">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Number</th>
-                                            <th scope="col">Type</th>
-                                            <th scope="col">Capacity</th>
-                                            <th scope="col">Price / Day</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col">Número</th>
+                                            <th scope="col">Tipo</th>
+                                            <th scope="col">Capacidad</th>
+                                            <th scope="col">Precio / Dia</th>
+                                            <th scope="col">Estado</th>
+                                            <th scope="col">Acción</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <h3>Room</h3>
+                            <h3>Habitación</h3>
                         </div>
                     </div>
                 </div>

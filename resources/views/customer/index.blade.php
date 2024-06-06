@@ -39,9 +39,11 @@
                 </div>
                 <div class="col-lg-6 mb-2">
                     <form class="d-flex" method="GET" action="{{ route('customer.index') }}">
-                        <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" id="search"
+                        <input class="form-control me-2" type="search" placeholder="Buscar por nombre" aria-label="Search" id="search"
                             name="search" value="{{ request()->input('search') }}">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                        <button class="btn btn-outline-dark" type="submit">
+                            Buscar
+                            </button>
                     </form>
                 </div>
             </div>
@@ -62,10 +64,11 @@
 
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <li><a class="dropdown-item"
-                                                    href="{{ route('customer.show', ['customer' => $customer->id]) }}">Detail</a>
+                                                    href="{{ route('customer.show', ['customer' => $customer->id]) }}">
+                                                    Detalle</a>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="{{ route('customer.edit', ['customer' => $customer->id]) }}">Edit</a>
+                                                    href="{{ route('customer.edit', ['customer' => $customer->id]) }}">Editar</a>
                                             </li>
                                             <li>
                                                 <form method="POST" id="delete-customer-form-{{ $customer->id }}"
@@ -74,7 +77,7 @@
                                                     @method('DELETE')
                                                     <a class="dropdown-item delete" href="#" customer-id="{{ $customer->id }}"
                                                         customer-role="Customer" customer-name="{{ $customer->name }}">
-                                                        Delete
+                                                        Eliminar
                                                     </a>
                                                 </form>
                                             </li>
@@ -145,7 +148,8 @@
                         </div>
                     </div>
                 @empty
-                    <p class="text-center">There's no customer found on database</p>
+                    <p class="text-center">
+                        No se ha encontrado ningún cliente en la base de datos.</p>
                 @endforelse
             </div>
             <div class="row justify-content-md-center mt-3">

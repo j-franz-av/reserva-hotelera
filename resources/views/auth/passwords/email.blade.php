@@ -38,7 +38,8 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h5 class="card-title text-center">Hotel Information System</h5>
+                                <h5 class="card-title text-center">
+                                    Sistema de información hotelera</h5>
                             </div>
                         </div>
 

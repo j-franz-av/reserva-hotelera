@@ -19,15 +19,15 @@
         </div>
         <div class="col-lg-6 mb-2">
             <form class="d-flex" method="GET" action="{{ route('transaction.index') }}">
-                <input class="form-control me-2" type="search" placeholder="Search by ID" aria-label="Search"
+                <input class="form-control me-2" type="search" placeholder="Buscar por identificación" aria-label="Search"
                     id="search-user" name="search" value="{{ request()->input('search') }}">
-                <button class="btn btn-outline-dark" type="submit">Search</button>
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
             </form>
         </div>
     </div>
     <div class="row my-2 mt-4 ms-1">
         <div class="col-lg-12">
-            <h5>Active Guests: </h5>
+            <h5>Invitados activos: </h5>
         </div>
     </div>
     <div class="row">
@@ -40,15 +40,15 @@
                                 <tr>
                                     <th>#</th>
                                     <th>ID</th>
-                                    <th>Customer</th>
-                                    <th>Room</th>
-                                    <th>Check In</th>
-                                    <th>Check Out</th>
-                                    <th>Days</th>
-                                    <th>Total Price</th>
-                                    <th>Paid Off</th>
-                                    <th>Debt</th>
-                                    <th>Action</th>
+                                    <th>Cliente</th>
+                                    <th>Habitación</th>
+                                    <th>Registrarse</th>
+                                    <th>Verificar</th>
+                                    <th>Dias</th>
+                                    <th>Precio total</th>
+                                    <th>Pagado</th>
+                                    <th>Deuda</th>
+                                    <th>Acción</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -81,7 +81,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="15" class="text-center">
-                                            There's no data in this table
+                                            No hay datos en esta tabla.
                                         </td>
                                     </tr>
                                 @endforelse
@@ -95,7 +95,7 @@
     </div>
     <div class="row my-2 mt-4 ms-1">
         <div class="col-lg-12">
-            <h5>Expired: </h5>
+            <h5>Caducado: </h5>
         </div>
     </div>
     <div class="row">
@@ -108,15 +108,15 @@
                                 <tr>
                                     <th>#</th>
                                     <th>ID</th>
-                                    <th>Customer</th>
-                                    <th>Room</th>
-                                    <th>Check In</th>
-                                    <th>Check Out</th>
-                                    <th>Days</th>
-                                    <th>Total Price</th>
-                                    <th>Paid Off</th>
-                                    <th>Debt</th>
-                                    <th>Action</th>
+                                    <th>Cliente</th>
+                                    <th>Habitación</th>
+                                    <th>Registrarse</th>
+                                    <th>Verificar</th>
+                                    <th>Días</th>
+                                    <th>Precio total</th>
+                                    <th>Pagado</th>
+                                    <th>Deuda</th>
+                                    <th>Acción</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -149,7 +149,7 @@
                             @empty
                                 <tr>
                                     <td colspan="15" class="text-center">
-                                        There's no data in this table
+                                        No hay datos en esta tabla.
                                     </td>
                                 </tr>
                             @endforelse
@@ -170,21 +170,21 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Have any account?</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Tiene alguna cuenta?</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-center">
                         <a class="btn btn-sm btn-primary m-1"
-                            href="{{ route('transaction.reservation.createIdentity') }}">No, create
-                            new account!</a>
+                            href="{{ route('transaction.reservation.createIdentity') }}">No, crear
+                            nueva cuenta!</a>
                         <a class="btn btn-sm btn-success m-1"
-                            href="{{ route('transaction.reservation.pickFromCustomer') }}">Yes, use
-                            their account!</a>
+                            href="{{ route('transaction.reservation.pickFromCustomer') }}">Si, usa
+                            mi cuenta!</a>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

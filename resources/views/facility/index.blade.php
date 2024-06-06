@@ -1,5 +1,5 @@
 @extends('template.master')
-@section('title', 'Facility')
+@section('title', 'Instalación')
 @section('content')
 
 @endsection

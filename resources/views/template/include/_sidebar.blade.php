@@ -40,10 +40,10 @@
                         <i class="fas fa-house-user"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('room.index') }}">Room</a></li>
-                        <li><a class="dropdown-item" href="{{ route('type.index') }}">Type</a></li>
-                        <li><a class="dropdown-item" href="{{ route('roomstatus.index') }}">Status</a></li>
-                        <li><a class="dropdown-item" href="{{ route('facility.index') }}">Facility</a></li>
+                        <li><a class="dropdown-item" href="{{ route('room.index') }}">Habitación</a></li>
+                        <li><a class="dropdown-item" href="{{ route('type.index') }}">Tipo</a></li>
+                        <li><a class="dropdown-item" href="{{ route('roomstatus.index') }}">Estado</a></li>
+                        <li><a class="dropdown-item" href="{{ route('facility.index') }}">Instalación</a></li>
                     </ul>
                 </li>
                 <li class="mb-2 bg-white rounded cursor-pointer">
@@ -54,9 +54,9 @@
                         <i class="fas fa-users"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('customer.index') }}">Customer</a></li>
+                        <li><a class="dropdown-item" href="{{ route('customer.index') }}">Cliente</a></li>
                         @if (auth()->user()->role == 'Super')
-                            <li><a class="dropdown-item" href="{{ route('user.index') }}">User</a></li>
+                            <li><a class="dropdown-item" href="{{ route('user.index') }}">Usuario</a></li>
                         @endif
                     </ul>
                 </li>

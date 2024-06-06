@@ -1,5 +1,5 @@
 @extends('template.master')
-@section('title', 'Room')
+@section('title', 'Habitación')
 @section('head')
     <style>
         .text {
@@ -36,9 +36,9 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Information</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Información</th>
+                                            <th scope="col">Acción</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <h3>Room</h3>
+                            <h3>Habitación</h3>
                         </div>
                     </div>
                 </div>

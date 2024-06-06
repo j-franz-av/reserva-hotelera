@@ -1,5 +1,5 @@
 @extends('template.master')
-@section('title', 'Dashboard')
+@section('title', 'Panel')
 @section('content')
     <div id="dashboard">
         <div class="row">
@@ -8,14 +8,15 @@
                     <div class="col-lg-6">
                         <div class="card shadow-sm border" style="border-radius: 0.5rem">
                             <div class="card-body">
-                                <h5>{{ count($transactions) }} Guests this day</h5>
+                                <h5>{{ count($transactions) }} Invitados este día</h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="card shadow-sm border" style="border-radius: 0.5rem">
                             <div class="card-body text-center">
-                                <h5>Dashboard</h5>
+                                <h5>
+                                    Panel</h5>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -28,7 +29,7 @@
                             <div class="card-header">
                                 <div class="row ">
                                     <div class="col-lg-12 d-flex justify-content-between">
-                                        <h3>Today Guests</h3>
+                                        <h3>Invitados hoy</h3>
                                         <div>
                                             <a href="#" class="btn btn-tool btn-sm">
                                                 <i class="fas fa-download"></i>
@@ -45,12 +46,17 @@
                                     <thead>
                                         <tr>
                                             <th></th>
-                                            <th>Name</th>
-                                            <th>Room</th>
-                                            <th class="text-center">Stay</th>
-                                            <th>Day Left</th>
-                                            <th>Debt</th>
-                                            <th class="text-center">Status</th>
+                                            <th>Nombre</th>
+                                            <th>
+                                                Habitación</th>
+                                            <th class="text-center">
+                                                Permanecer</th>
+                                            <th>
+                                                Días que se quedan</th>
+                                            <th>
+                                                Deuda</th>
+                                            <th class="text-center">
+                                                Estado</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -88,7 +94,7 @@
                                                     </span>
                                                     @if (Helper::getDateDifference(now(), $transaction->check_out) < 1)
                                                         <span class="justify-content-center badge bg-danger">
-                                                            must finish payment
+                                                            Debe finalizar el pago
                                                         </span>
                                                     @endif
                                                 </td>
@@ -96,7 +102,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    No hay datos en esta tabla.
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -126,7 +132,8 @@
                         <div class="card shadow-sm border">
                             <div class="card-header border-0">
                                 <div class="d-flex justify-content-between">
-                                    <h3 class="card-title">Monthly Guests Chart</h3>
+                                    <h3 class="card-title">
+                                        Tabla de invitados mensuales</h3>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -151,8 +158,9 @@
                                     <span class="mr-2">
                                         <i class="fas fa-square text-primary"></i> {{ Helper::thisMonth() }}
                                     </span>
-                                    <span>
-                                        <i class="fas fa-square text-gray"></i> Last month
+                                    <span> 
+                                        <i class="fas fa-square text-gray"></i> 
+                                        El mes pasado
                                     </span>
                                 </div>
                             </div>
